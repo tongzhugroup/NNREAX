@@ -1,5 +1,5 @@
 # Neural Networks for Reactions (NNREAX)
-[![Research Group](https://img.shields.io/website-up-down-green-red/http/computchem.cn.svg?label=Research%20Group)](http://computchem.cn)
+[![Research Group](https://img.shields.io/website-up-down-green-red/https/computchem.cn.svg?label=Research%20Group)](http://computchem.cn)
 
 ## Datasets
 
