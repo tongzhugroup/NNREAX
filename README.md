@@ -6,5 +6,5 @@
 | System | Number of structures | Method | Citation |
 | ----   | ---- | ---- | ---- |
 | [Methane](methane/) | 578,731 | MN15/6-31G\*\* | [![arxiv:1910.12690](http://img.shields.io/badge/arXiv-1911.12252-B31B1B.svg?maxAge=86400)](https://arxiv.org/abs/1911.12252)|
-| [Dodecane](dodecane/) |  | MN15/6-31G\*\* | |
+| [Dodecane](dodecane/) | 40,330 | MN15/6-31G\*\* | |
 
