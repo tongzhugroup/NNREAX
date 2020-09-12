@@ -9,6 +9,5 @@
 **Note**: Due to the limitation of GitHub, `methane_v1.tar.bz2` is split into two files in the GitHub repository. Please use the following script to decompress it:
 
 ```sh
-cat methane_v1.tar.bz2.* | tar -xj
+cat methane_v1.tar.bz2.01 methane_v1.tar.bz2.02 | tar -xj
 ```
-
