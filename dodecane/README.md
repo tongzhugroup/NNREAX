@@ -11,3 +11,7 @@
 | ---- | ---- | ---- | ---- |
 | dodecane_model_v1.pb | v1 | [DeePMD-kit](https://github.com/deepmodeling/deepmd-kit) v1.2 | [![DOI:10.26434/chemrxiv.12935261](https://zenodo.org/badge/DOI/10.26434/chemrxiv.12935261.svg)](https://doi.org/10.26434/chemrxiv.12935261) |
 
+## DP-GEN parameter
+| Filename | Version | Software | Citation |
+| ---- | ---- | ---- | ---- |
+| dodecane_v1.json | v1 | [DP-GEN](https://github.com/deepmodeling/dpgen) v0.8 | [![DOI:10.26434/chemrxiv.12935261](https://zenodo.org/badge/DOI/10.26434/chemrxiv.12935261.svg)](https://doi.org/10.26434/chemrxiv.12935261) |

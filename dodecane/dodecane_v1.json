@@ -1,0 +1,711 @@
+{
+	"type_map": [
+		"C",
+		"H"
+	],
+	"mass_map": [
+		12.011,
+		1.008
+	],
+	"init_data_prefix": "/home/jzzeng/dpgen-combustion/dodecane/",
+	"init_data_sys": [
+		"init_data"
+	],
+	"_comment": "the initial data was generated from ReaxFF MD trajectory using MDDatasetbuilder software",
+	"init_multi_systems": true,
+	"init_batch_size": [
+		"auto"
+	],
+	"sys_configs": [
+		[
+			"/home/jzzeng/dpgen-combustion/dodecane/data.dodecane.atomic"
+		],
+		[
+			"/home/jzzeng/dpgen-combustion/dodecane/data.decane.atomic"
+		],
+		[
+			"/home/jzzeng/dpgen-combustion/dodecane/data.14"
+		],
+		[
+			"/home/jzzeng/dpgen-combustion/dodecane/data.20"
+		]
+	],
+	"_comment": "the initial structure was generated using Material Studio",
+	"sys_batch_size": [
+		"auto",
+		"auto",
+		"auto",
+		"auto"
+	],
+	"sys_format": "lammps/lmp",
+	"numb_models": 4,
+	"train_param": "input.json",
+	"default_training_param": {
+		"model": {
+			"type_map": [
+				"C",
+				"H"
+			],
+			"descriptor": {
+				"type": "se_a",
+				"sel": [
+					50,
+					120
+				],
+				"rcut_smth": 1.00,
+				"rcut": 6.00,
+				"neuron": [
+					25,
+					50,
+					100
+				],
+				"resnet_dt": false,
+				"axis_neuron": 12
+			},
+			"fitting_net": {
+				"neuron": [
+					240,
+					240,
+					240
+				],
+				"resnet_dt": true
+			}
+		},
+		"learning_rate": {
+			"type": "exp",
+			"start_lr": 0.001,
+			"decay_steps": 4000,
+			"decay_rate": 0.99
+		},
+		"loss": {
+			"start_pref_e": 0.02,
+			"limit_pref_e": 1,
+			"start_pref_f": 1000,
+			"limit_pref_f": 1,
+			"start_pref_v": 0,
+			"limit_pref_v": 0,
+			"start_pref_pf": 0,
+			"limit_pref_pf": 0
+		},
+		"training": {
+			"set_prefix": "set",
+			"stop_batch": 4000000,
+			"disp_file": "lcurve.out",
+			"disp_freq": 1000,
+			"numb_test": 1,
+			"save_freq": 1000,
+			"save_ckpt": "model.ckpt",
+			"load_ckpt": "model.ckpt",
+			"disp_training": true,
+			"time_training": true,
+			"profiling": false,
+			"profiling_file": "timeline.json"
+		},
+		"_comment": "that's all"
+	},
+	"use_clusters": true,
+	"use_atom_pref": true,
+	"cluster_cutoff": 3.5,
+	"cluster_cutoff_hard": 4.5,
+	"cluster_minify": true,
+	"use_relative": true,
+	"epsilon": 1.0,
+	"model_devi_dt": 0.0001,
+	"model_devi_skip": 100,
+	"model_devi_f_trust_lo": 0.20,
+	"model_devi_f_trust_hi": 0.45,
+	"model_devi_e_trust_lo": 1e10,
+	"model_devi_e_trust_hi": 1e10,
+	"model_devi_clean_traj": false,
+	"model_devi_jobs": [
+		{
+			"sys_idx": [
+				0
+			],
+			"temps": [
+				1500,
+				2000,
+				2500,
+				3000
+			],
+			"trj_freq": 100,
+			"nsteps": 2000,
+			"ensemble": "nvt",
+			"_idx": "00"
+		},
+		{
+			"sys_idx": [
+				0
+			],
+			"temps": [
+				1500,
+				2000,
+				2500,
+				3000
+			],
+			"trj_freq": 100,
+			"nsteps": 2000,
+			"ensemble": "nvt",
+			"_idx": "01"
+		},
+		{
+			"sys_idx": [
+				0
+			],
+			"temps": [
+				1500,
+				2000,
+				2500,
+				3000
+			],
+			"trj_freq": 100,
+			"nsteps": 2000,
+			"ensemble": "nvt",
+			"_idx": "02"
+		},
+		{
+			"sys_idx": [
+				0
+			],
+			"temps": [
+				1500,
+				2000,
+				2500,
+				3000
+			],
+			"trj_freq": 100,
+			"nsteps": 4000,
+			"ensemble": "nvt",
+			"_idx": "03"
+		},
+		{
+			"sys_idx": [
+				0
+			],
+			"temps": [
+				1500,
+				2000,
+				2500,
+				3000
+			],
+			"trj_freq": 100,
+			"nsteps": 8000,
+			"ensemble": "nvt",
+			"_idx": "04"
+		},
+		{
+			"sys_idx": [
+				0
+			],
+			"temps": [
+				1500,
+				2000,
+				2500,
+				3000
+			],
+			"trj_freq": 100,
+			"nsteps": 16000,
+			"ensemble": "nvt",
+			"_idx": "05"
+		},
+		{
+			"sys_idx": [
+				0
+			],
+			"temps": [
+				1500,
+				2000,
+				2500,
+				3000
+			],
+			"trj_freq": 100,
+			"nsteps": 32000,
+			"ensemble": "nvt",
+			"_idx": "06"
+		},
+		{
+			"sys_idx": [
+				0
+			],
+			"temps": [
+				1500,
+				2000,
+				2500,
+				3000
+			],
+			"trj_freq": 100,
+			"nsteps": 32000,
+			"ensemble": "nvt",
+			"_idx": "07"
+		},
+		{
+			"sys_idx": [
+				0
+			],
+			"temps": [
+				1500,
+				2000,
+				2500,
+				3000
+			],
+			"trj_freq": 100,
+			"nsteps": 32000,
+			"ensemble": "nvt",
+			"_idx": "08"
+		},
+		{
+			"sys_idx": [
+				0
+			],
+			"temps": [
+				1500,
+				2000,
+				2500,
+				3000
+			],
+			"trj_freq": 100,
+			"nsteps": 32000,
+			"ensemble": "nvt",
+			"_idx": "09"
+		},
+		{
+			"sys_idx": [
+				0
+			],
+			"temps": [
+				1500,
+				2000,
+				2500,
+				3000
+			],
+			"trj_freq": 100,
+			"nsteps": 32000,
+			"ensemble": "nvt",
+			"_idx": "10"
+		},
+		{
+			"sys_idx": [
+				0
+			],
+			"temps": [
+				1500,
+				2000,
+				2500,
+				3000
+			],
+			"trj_freq": 100,
+			"nsteps": 64000,
+			"ensemble": "nvt",
+			"_idx": "11"
+		},
+		{
+			"sys_idx": [
+				0
+			],
+			"temps": [
+				1500,
+				2000,
+				2500,
+				3000
+			],
+			"trj_freq": 100,
+			"nsteps": 128000,
+			"ensemble": "nvt",
+			"_idx": "12"
+		},
+		{
+			"sys_idx": [
+				0
+			],
+			"temps": [
+				1500,
+				2000,
+				2500,
+				3000
+			],
+			"trj_freq": 100,
+			"nsteps": 128000,
+			"ensemble": "nvt",
+			"_idx": "13"
+		},
+		{
+			"sys_idx": [
+				0
+			],
+			"temps": [
+				1500,
+				2000,
+				2500,
+				3000
+			],
+			"trj_freq": 100,
+			"nsteps": 128000,
+			"ensemble": "nvt",
+			"_idx": "14"
+		},
+		{
+			"sys_idx": [
+				0
+			],
+			"temps": [
+				1500,
+				2000,
+				2500,
+				3000
+			],
+			"trj_freq": 100,
+			"nsteps": 128000,
+			"ensemble": "nvt",
+			"_idx": "15"
+		},
+		{
+			"sys_idx": [
+				0
+			],
+			"temps": [
+				1500,
+				2000,
+				2500,
+				3000
+			],
+			"trj_freq": 100,
+			"nsteps": 256000,
+			"ensemble": "nvt",
+			"_idx": "16"
+		},
+		{
+			"sys_idx": [
+				0
+			],
+			"temps": [
+				1500,
+				2000,
+				2500,
+				3000
+			],
+			"trj_freq": 100,
+			"nsteps": 256000,
+			"ensemble": "nvt",
+			"_idx": "17"
+		},
+		{
+			"sys_idx": [
+				0
+			],
+			"temps": [
+				1500,
+				2000,
+				2500,
+				3000
+			],
+			"trj_freq": 100,
+			"nsteps": 256000,
+			"ensemble": "nvt",
+			"_idx": "18"
+		},
+		{
+			"sys_idx": [
+				0
+			],
+			"temps": [
+				1500,
+				2000,
+				2500,
+				3000
+			],
+			"trj_freq": 100,
+			"nsteps": 256000,
+			"ensemble": "nvt",
+			"_idx": "19"
+		},
+		{
+			"sys_idx": [
+				0
+			],
+			"temps": [
+				1500,
+				2000,
+				2500,
+				3000
+			],
+			"trj_freq": 100,
+			"nsteps": 256000,
+			"ensemble": "nvt",
+			"_idx": "20"
+		},
+		{
+			"sys_idx": [
+				0
+			],
+			"temps": [
+				1500,
+				2000,
+				2500,
+				3000
+			],
+			"trj_freq": 100,
+			"nsteps": 256000,
+			"ensemble": "nvt",
+			"_idx": "21"
+		},
+		{
+			"sys_idx": [
+				0
+			],
+			"temps": [
+				1500,
+				2000,
+				2500,
+				3000
+			],
+			"trj_freq": 100,
+			"nsteps": 256000,
+			"ensemble": "nvt",
+			"_idx": "22"
+		},
+		{
+			"sys_idx": [
+				0
+			],
+			"temps": [
+				1500,
+				2000,
+				2500,
+				3000
+			],
+			"trj_freq": 100,
+			"nsteps": 256000,
+			"ensemble": "nvt",
+			"_idx": "23"
+		},
+		{
+			"sys_idx": [
+				0
+			],
+			"temps": [
+				1500,
+				2000,
+				2500,
+				3000
+			],
+			"trj_freq": 100,
+			"nsteps": 512000,
+			"ensemble": "nvt",
+			"_idx": "24"
+		},
+		{
+			"sys_idx": [
+				0
+			],
+			"temps": [
+				1500,
+				2000,
+				2500,
+				3000
+			],
+			"trj_freq": 100,
+			"nsteps": 512000,
+			"ensemble": "nvt",
+			"_idx": "25"
+		},
+		{
+			"sys_idx": [
+				0
+			],
+			"temps": [
+				1500,
+				2000,
+				2500,
+				3000
+			],
+			"trj_freq": 100,
+			"nsteps": 512000,
+			"ensemble": "nvt",
+			"_idx": "26"
+		},
+		{
+			"sys_idx": [
+				0
+			],
+			"temps": [
+				1500,
+				2000,
+				2500,
+				3000
+			],
+			"trj_freq": 100,
+			"nsteps": 512000,
+			"ensemble": "nvt",
+			"_idx": "27"
+		},
+		{
+			"sys_idx": [
+				0
+			],
+			"temps": [
+				1500,
+				2000,
+				2500,
+				3000
+			],
+			"trj_freq": 100,
+			"nsteps": 1024000,
+			"ensemble": "nvt",
+			"_idx": "28"
+		},
+		{
+			"sys_idx": [
+				0
+			],
+			"temps": [
+				1500,
+				2000,
+				2500,
+				3000
+			],
+			"trj_freq": 100,
+			"nsteps": 1024000,
+			"ensemble": "nvt",
+			"_idx": "29"
+		},
+		{
+			"sys_idx": [
+				0
+			],
+			"temps": [
+				1500,
+				2000,
+				2500,
+				3000
+			],
+			"trj_freq": 100,
+			"nsteps": 1024000,
+			"ensemble": "nvt",
+			"_idx": "30"
+		},
+		{
+			"sys_idx": [
+				0
+			],
+			"temps": [
+				1500,
+				2000,
+				2500,
+				3000
+			],
+			"trj_freq": 100,
+			"nsteps": 1024000,
+			"ensemble": "nvt",
+			"_idx": "31"
+		},
+		{
+			"sys_idx": [
+				0
+			],
+			"temps": [
+				1500,
+				2000,
+				2500,
+				3000
+			],
+			"trj_freq": 200,
+			"nsteps": 2048000,
+			"ensemble": "nvt",
+			"_idx": "32"
+		},
+		{
+			"sys_idx": [
+				0
+			],
+			"temps": [
+				1500,
+				2000,
+				2500,
+				3000
+			],
+			"trj_freq": 200,
+			"nsteps": 2048000,
+			"ensemble": "nvt",
+			"_idx": "33"
+		},
+		{
+			"sys_idx": [
+				0
+			],
+			"temps": [
+				1500,
+				2000,
+				2500,
+				3000
+			],
+			"trj_freq": 200,
+			"nsteps": 5000000,
+			"ensemble": "nvt",
+			"_idx": "34"
+		},
+		{
+			"sys_idx": [
+				0
+			],
+			"temps": [
+				1500,
+				2000,
+				2500,
+				3000
+			],
+			"trj_freq": 200,
+			"nsteps": 10000000,
+			"ensemble": "nvt",
+			"_idx": "35"
+		},
+		{
+			"sys_idx": [
+				1
+			],
+			"temps": [
+				2000
+			],
+			"trj_freq": 200,
+			"nsteps": 10000000,
+			"ensemble": "nvt",
+			"_idx": "36"
+		},
+		{
+			"sys_idx": [
+				0,
+				1,
+				2,
+				3
+			],
+			"temps": [
+				2000
+			],
+			"trj_freq": 200,
+			"nsteps": 10000000,
+			"ensemble": "nvt",
+			"_idx": "37",
+			"_comment": "this itertion is to run simulations of different alkanes"
+		}
+	],
+	"fp_style": "gaussian",
+	"shuffle_poscar": false,
+	"fp_task_max": 1000,
+	"fp_task_min": 10,
+	"fp_pp_path": "/home/jzzeng/",
+	"fp_pp_files": [],
+	"fp_params": {
+		"keywords": [
+			"mn15/6-31g** nosymm scf(maxcyc=512)",
+			"mn15/6-31g** force nosymm scf(maxcyc=512) geom=chk guess=read"
+		],
+		"keywords_high_multiplicity": [
+			"mn15/6-31g** stable=opt nosymm scf(maxcyc=512)",
+			"mn15/6-31g** force nosymm scf(maxcyc=512) geom=chk guess=read"
+		],
+		"nproc": 40,
+		"multiplicity": "auto",
+		"_comment": " that's all "
+	},
+	"detailed_report_make_fp": false,
+	"_comment": " that's all "
+}
