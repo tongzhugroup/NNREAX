@@ -17,4 +17,5 @@
 | System | Software | Citation |
 | ---- | ---- | ---- |
 | [Dodecane](dodecane/) | [DP-GEN](https://github.com/deepmodeling/dpgen) v0.8 | [![DOI:10.1021/acs.energyfuels.0c03211](https://zenodo.org/badge/DOI/10.1021/acs.energyfuels.0c03211.svg)](https://doi.org/10.1021/acs.energyfuels.0c03211) |
+| [CL-20](cl20/) | v1 | [DP-GEN](https://github.com/deepmodeling/dpgen) v0.8 | N/A |
 
