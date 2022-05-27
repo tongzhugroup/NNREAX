@@ -7,6 +7,7 @@
 | ----   | ---- | ---- | ---- |
 | [Methane](methane/) | 578,731 | MN15/6-31G\*\* | [![DOI:10.1038/s41467-020-19497-z](https://img.shields.io/badge/DOI-10.1038%2Fs41467--020--19497--z-blue)](https://doi.org/10.1038/s41467-020-19497-z)|
 | [Dodecane](dodecane/) | 35,496 | MN15/6-31G\*\* | [![DOI:10.1021/acs.energyfuels.0c03211](https://img.shields.io/badge/DOI-10.1021%2Facs.energyfuels.0c03211-blue)](https://doi.org/10.1021/acs.energyfuels.0c03211) |
+| [CL-20](cl20/) | 9,438 | PBE-D3 | [![DOI:10.1039/D2CP00710J](https://img.shields.io/badge/DOI-10.1039%2FD2CP00710J-blue)](https://doi.org/10.1039/D2CP00710J) |
 
 ## Models
 | System | Software | Citation |
@@ -17,5 +18,5 @@
 | System | Software | Citation |
 | ---- | ---- | ---- |
 | [Dodecane](dodecane/) | [DP-GEN](https://github.com/deepmodeling/dpgen) v0.8 | [![DOI:10.1021/acs.energyfuels.0c03211](https://img.shields.io/badge/DOI-10.1021%2Facs.energyfuels.0c03211-blue)](https://doi.org/10.1021/acs.energyfuels.0c03211) |
-| [CL-20](cl20/) | [DP-GEN](https://github.com/deepmodeling/dpgen) v0.8 | N/A |
+| [CL-20](cl20/) | [DP-GEN](https://github.com/deepmodeling/dpgen) v0.8 | [![DOI:10.1039/D2CP00710J](https://img.shields.io/badge/DOI-10.1039%2FD2CP00710J-blue)] |
 
